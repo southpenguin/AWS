@@ -30,7 +30,7 @@ public class EBS {
 		   	    .withInstanceId("instanceID")	//This is my running instance ID
 		   	    .withDevice("/dev/sdf");		//Regular volume type
 
-			Thread.sleep(3000);					//Need to wait for volume to initialize
+			Thread.sleep(3000);			//Need to wait for volume to initialize
 
 			ec2.attachVolume(attachRequest);
 			
