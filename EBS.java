@@ -20,14 +20,14 @@ public class EBS {
 			AmazonEC2Client ec2 = new AmazonEC2Client(credentials);
 				
 			CreateVolumeRequest createVolumeRequest = new CreateVolumeRequest()
-		   	    .withAvailabilityZone("us-east-1c")			//Zone of my current instance running on
-		   	    .withSize(1); 
+		   	    .withAvailabilityZone("instanceZone")			//Zone of my current instance running on
+		   	    .withSize(1); 			//Size of the volume, unit GigaByte
 
 			CreateVolumeResult createVolumeResult = ec2.createVolume(createVolumeRequest);
 
 			AttachVolumeRequest attachRequest = new AttachVolumeRequest()
 		   	    .withVolumeId(createVolumeResult.getVolume().getVolumeId())
-		   	    .withInstanceId("i-9a195171")	//This is my running instance ID
+		   	    .withInstanceId("instanceID")	//This is my running instance ID
 		   	    .withDevice("/dev/sdf");		//Regular volume type
 
 			Thread.sleep(3000);					//Need to wait for volume to initialize
