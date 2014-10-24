@@ -34,13 +34,11 @@ public class EBS {
 
 			ec2.attachVolume(attachRequest);
 			
-			
         } catch (AmazonServiceException ase) {
                 System.out.println("Caught Exception: " + ase.getMessage());
                 System.out.println("Reponse Status Code: " + ase.getStatusCode());
                 System.out.println("Error Code: " + ase.getErrorCode());
                 System.out.println("Request ID: " + ase.getRequestId());
         } 
-        
     }
 }
