@@ -7,4 +7,4 @@ To do list
 - [X] [Create a Elastic Block Store (EBS) volume and attach to the instance using JAVA.]
       (https://github.com/southpenguin/AWS/blob/master/EBS.java)
   - [ ] Fixed the "Thread.sleep()" issue by automatically checking the state of the volume.
-- [ ] Project - U vote, I vote.
+- [ ] Project - WeVote
