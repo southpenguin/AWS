@@ -8,3 +8,5 @@ To do list
       (https://github.com/southpenguin/AWS/blob/master/EBS.java)
   - [ ] Fixed the "Thread.sleep()" issue by automatically checking the state of the volume.
 - [ ] Project - WeVote
+- [ ] Twitter Developer API
+- [ ] Assignment 1
