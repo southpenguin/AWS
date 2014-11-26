@@ -1,19 +1,5 @@
 package src;
 
-/*
- * Copyright 2010-2014 Amazon.com, Inc. or its affiliates. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License").
- * You may not use this file except in compliance with the License.
- * A copy of the License is located at
- *
- *  http://aws.amazon.com/apache2.0
- *
- * or in the "license" file accompanying this file. This file is distributed
- * on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
- * express or implied. See the License for the specific language governing
- * permissions and limitations under the License.
- */
 import java.util.List;
 import java.util.Map.Entry;
 
@@ -26,27 +12,15 @@ import com.amazonaws.regions.Regions;
 import com.amazonaws.services.sqs.AmazonSQS;
 import com.amazonaws.services.sqs.AmazonSQSClient;
 import com.amazonaws.services.sqs.model.CreateQueueRequest;
-import com.amazonaws.services.sqs.model.DeleteMessageRequest;
-import com.amazonaws.services.sqs.model.DeleteQueueRequest;
 import com.amazonaws.services.sqs.model.Message;
 import com.amazonaws.services.sqs.model.ReceiveMessageRequest;
 import com.amazonaws.services.sqs.model.SendMessageRequest;
 
-/**
- * This sample demonstrates how to make basic requests to Amazon SQS using the
- * AWS SDK for Java.
- * <p>
- * <b>Prerequisites:</b> You must have a valid Amazon Web
- * Services developer account, and be signed up to use Amazon SQS. For more
- * information on Amazon SQS, see http://aws.amazon.com/sqs.
- * <p>
- * Fill in your AWS access credentials in the provided credentials file
- * template, and be sure to move the file to the default location
- * (~/.aws/credentials) where the sample code will load the credentials from.
- * <p>
- * <b>WANRNING:</b> To avoid accidental leakage of your credentials, DO NOT keep
- * the credentials file in your source directory.
- */
+/* Commented the delete message and delete queue, these 2 imports do not need
+import com.amazonaws.services.sqs.model.DeleteMessageRequest;
+import com.amazonaws.services.sqs.model.DeleteQueueRequest;
+*/
+
 public class SimpleQueueServiceSample {
 
     public static void main(String[] args) throws Exception {
@@ -111,6 +85,7 @@ public class SimpleQueueServiceSample {
             System.out.println();
 
             /* We do not need to delete messages and queue
+             * 
             // Delete a message
             System.out.println("Deleting a message.\n");
             String messageRecieptHandle = messages.get(0).getReceiptHandle();
