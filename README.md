@@ -1,6 +1,5 @@
 AWS
 ===
-To do list
 - [X] [Launch an EC2 instance using JAVA.]
       (https://github.com/southpenguin/AWS/blob/master/CreateEC2.java)
   - [ ] Log into to instance using JAVA.
@@ -8,5 +7,9 @@ To do list
       (https://github.com/southpenguin/AWS/blob/master/EBS.java)
   - [ ] Fixed the "Thread.sleep()" issue by automatically checking the state of the volume.
 - [ ] Project - WeVote
-- [ ] Twitter Developer API
-- [ ] Assignment 1
+- [X] Twitter Developer API
+- [X] Assignment 1
+- [ ] Assignment 2
+  - [ ] AWS SQS JAVA
+  - [ ] AWS SNS PUSH JAVA
+  - [ ] Intergration
