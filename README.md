@@ -9,7 +9,7 @@ AWS
 - [ ] Project - WeVote
 - [X] Twitter Developer API
 - [X] Assignment 1
-- [ ] Assignment 2
-  - [ ] AWS SQS JAVA
+- [X] Assignment 2
+  - [X] AWS SQS JAVA
   - [ ] AWS SNS PUSH JAVA
   - [ ] Intergration
